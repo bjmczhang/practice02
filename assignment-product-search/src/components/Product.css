@@ -1,0 +1,47 @@
+.productCard {
+  width: 25rem;
+  height: 39rem;
+  overflow: hidden;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.productCard:hover {
+  border: 2px solid var(--gray);
+}
+
+.productCard img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.productName {
+  font-size: 2rem;
+  font-weight: 700;
+  height: 5rem;
+  overflow: hidden;
+}
+
+.productCard .productInfo {
+  padding: 2rem;
+}
+
+.productInfo .description {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.productInfo .price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  text-align: right;
+}
