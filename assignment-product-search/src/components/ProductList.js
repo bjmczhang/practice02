@@ -113,6 +113,8 @@ function ProductList() {
   // Filter function
   const handleFilter = (category) => {
     setCategoryFilter(category);
+    setSortOrder("default");
+
     if (category === "All") {
       setFilteredProducts(products);
     } else if (category === "pants and skirts") {
@@ -131,12 +133,14 @@ function ProductList() {
 
   // Search function
   const handleSearch = () => {
+    setSortOrder("default");
     const filtered = products.filter(
       (product) =>
         product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         product.description.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredProducts(filtered);
+    setSearchTerm("");
   };
 
   // Handle key press
